@@ -29,6 +29,8 @@ class GCSFakeFileCreatorCLI:
                             help='If left blank a random number of rows will be generated')
         parser.add_argument('--num-cols',
                             help='If left blank a random number of columns will be generated (25 avaliable)')
+        parser.add_argument('--num-files',
+                            help='Number of files to be generated')
         parser.add_argument('--obfuscate-col-names',
                             help='If provided the column names will be obfuscated')
 
@@ -43,4 +45,5 @@ class GCSFakeFileCreatorCLI:
                            args.file_name,
                            int(args.num_rows) if args.num_rows else None,
                            int(args.num_cols) if args.num_cols else None,
+                           int(args.num_files) if args.num_files else 1,
                            args.obfuscate_col_names).create()
