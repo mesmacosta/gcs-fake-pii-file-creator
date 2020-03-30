@@ -68,7 +68,7 @@ See instructions below.
 Only the project-id argument is required.
 
 ```bash
-python main.py --project-id your_project --num-rows 5000 --num-cols 10 --obfuscate-col-names true
+python main.py --project-id your_project --num-rows 5000 --num-cols 10 --num-files 10 --obfuscate-col-names true
 ```
 
 ### 2.2. Or using Docker
